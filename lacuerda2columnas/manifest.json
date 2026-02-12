@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Lacuerda.net en dos columnas",
+  "description": "Mejora la visualización de contenidos de lacuerda .net en pantallas anchas. muestra el contenido principal en dos columnas.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lacuerda.net en dos columnas",
+    "default_icon": "images/icon_16.png"
+  },
+  "host_permissions": [
+    "*://*.lacuerda.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.lacuerda.net/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
